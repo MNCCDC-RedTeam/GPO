@@ -5,12 +5,12 @@
 1. You need **Domain Admin (DA)** privileges for this to work (or **GPO Admin**).
 2. Open the **Group Policy Management** console (`gpmc.msc`).
 3. Navigate to:
-   **Forest → Domains → (Domain) → Group Policy Objects**
+   **Forest → Domains → (CCDCTeam.com) → Group Policy Objects**
 4. Right-click **Group Policy Objects** → **Manage Backups…**
 5. Set the path to the folder containing the extracted ZIP files
    *(should be a series of folders named with GUIDs)*.
 6. Restore the GPOs you want.
-7. Under **Domains**, right-click the **(Domain)** → select **Link to an Existing GPO…**
+7. Under **Domains**, right-click the **(CCDCTeam.com)** → select **Link to an Existing GPO…**
 8. Select the GPO you want to enable.
 9. Right-click the GPO link → select **Enforced**.
 10. Right-click any OUs (folders) containing computers and select
@@ -72,7 +72,7 @@
 
 ## Default User Policy
 
-### *(Destructive)*
+### *(Non-Destructive)*
 
 - Almost disables account lockout:
   - 1 minute duration
